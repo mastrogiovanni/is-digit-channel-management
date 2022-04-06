@@ -2,7 +2,7 @@ const { readFileSync } = require("fs");
 const crypto = require("crypto");
 const ed = require("@noble/ed25519");
 const bs58 = require("bs58");
-const { BaseClient } = require("iota-is-sdk/lib/clients/base");
+const { BaseClient } = require("@iota/is-client");
 import { defaultConfig } from './configuration';
 
 (async () => {

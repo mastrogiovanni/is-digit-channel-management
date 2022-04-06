@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { AccessRights, IdentityClient, ChannelClient } from 'iota-is-sdk';
+import { AccessRights, IdentityClient, ChannelClient } from '@iota/is-client';
 
 import { defaultConfig } from './configuration';
 

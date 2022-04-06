@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { AccessRights, IdentityClient, ChannelClient } from 'iota-is-sdk';
+import { AccessRights, IdentityClient, ChannelClient } from '@iota/is-client';
 
 import { defaultConfig } from './configuration';
 
@@ -49,7 +49,7 @@ const identity = new IdentityClient(defaultConfig);
 
     const unauthorizedSubscriptions = subscriptions.filter(subscription => !subscription.isAuthorized)
 
-    console.log('Unauthorized subscriptions:', unauthorizedSubscriptions);
+    // console.log('Unauthorized subscriptions:', unauthorizedSubscriptions);
 
     for (const subscription of unauthorizedSubscriptions) {
         console.log(`Authorizing subscription: ${subscription.id}...`);
